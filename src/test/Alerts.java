@@ -2,6 +2,7 @@ package test;
 
 import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -32,11 +33,12 @@ public class Alerts {
 		driver.findElement(By.xpath("//button[text()='Click for JS Confirm']")).click();
 		Thread.sleep(5000);
 		driver.switchTo().alert().dismiss();
-
-		// Enter text into alert text box
+		
+		//Enter text into alert text box
 		driver.findElement(By.xpath("//button[text()='Click for JS Prompt']")).click();
-		Thread.sleep(3000);
-		driver.switchTo().alert().sendKeys("Automation");
+		Alert alert = driver.switchTo().alert();
+		alert.sendKeys("Automation");
+		alert.accept();
 	}
 
 }
