@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+  
+<suite name="Test Automation" verbose="1" >
+  <test name="TestNG Test" >
+    <classes>
+       <class name="testngTests.GoogleTest" />
+    </classes>
+  </test>
+</suite>

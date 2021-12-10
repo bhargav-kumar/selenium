@@ -32,6 +32,17 @@ public class RobotClassTest {
 		robot.keyPress(KeyEvent.VK_ENTER);
 		robot.keyRelease(KeyEvent.VK_ENTER);
 		
+		//Copy 
+		robot.keyPress(KeyEvent.VK_CONTROL);
+		robot.keyPress(KeyEvent.VK_C);
+		robot.keyRelease(KeyEvent.VK_CONTROL);
+		robot.keyRelease(KeyEvent.VK_C);
+		
+		//Paste
+		robot.keyPress(KeyEvent.VK_CONTROL);
+		robot.keyPress(KeyEvent.VK_V);
+		robot.keyRelease(KeyEvent.VK_CONTROL);
+		robot.keyRelease(KeyEvent.VK_V);
 	}
 
 }

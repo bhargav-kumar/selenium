@@ -21,7 +21,7 @@ public class NavigationsTest {
 		driver.get("http://the-internet.herokuapp.com/");
 		driver.manage().window().maximize();
 
-		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(30));
+		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(30)); //3.11, 4
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		driver.manage().deleteAllCookies();
 

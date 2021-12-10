@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Test Automation" duration-ms="11748" started-at="2021-12-10T06:49:48Z" finished-at="2021-12-10T06:50:00Z">
+    <groups>
+    </groups>
+    <test name="TestNG Test" duration-ms="11748" started-at="2021-12-10T06:49:48Z" finished-at="2021-12-10T06:50:00Z">
+      <class name="testngTests.GoogleTest">
+        <test-method status="PASS" signature="intialization()[pri:0, instance:testngTests.GoogleTest@68be2bc2]" name="intialization" is-config="true" duration-ms="2922" started-at="2021-12-10T06:49:48Z" finished-at="2021-12-10T06:49:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- intialization -->
+        <test-method status="PASS" signature="yahooTest()[pri:1, instance:testngTests.GoogleTest@68be2bc2]" name="yahooTest" duration-ms="2589" started-at="2021-12-10T06:49:51Z" finished-at="2021-12-10T06:49:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- yahooTest -->
+        <test-method status="PASS" signature="facebookTest()[pri:2, instance:testngTests.GoogleTest@68be2bc2]" name="facebookTest" duration-ms="1489" started-at="2021-12-10T06:49:54Z" finished-at="2021-12-10T06:49:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- facebookTest -->
+        <test-method status="PASS" signature="googleTest()[pri:3, instance:testngTests.GoogleTest@68be2bc2]" name="googleTest" duration-ms="4028" started-at="2021-12-10T06:49:55Z" finished-at="2021-12-10T06:49:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- googleTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testngTests.GoogleTest@68be2bc2]" name="tearDown" is-config="true" duration-ms="694" started-at="2021-12-10T06:49:59Z" finished-at="2021-12-10T06:50:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testngTests.GoogleTest -->
+    </test> <!-- TestNG Test -->
+  </suite> <!-- Test Automation -->
+</testng-results>
