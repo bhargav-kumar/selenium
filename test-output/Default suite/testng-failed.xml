@@ -1,17 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <parameter name="GoogleSearchInput" value="param-val-not-found"/>
-  <parameter name="url" value="param-val-not-found"/>
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testngTests.TestngParametersTest">
+      <class name="testngTests.TestngParametersTest2">
         <methods>
-          <include name="googleTest" invocation-numbers="0"/>
-          <include name="tearDown"/>
           <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="googleTest"/>
         </methods>
-      </class> <!-- testngTests.TestngParametersTest -->
+      </class> <!-- testngTests.TestngParametersTest2 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

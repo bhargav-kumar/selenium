@@ -6,11 +6,15 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
+import testNGListeners.TestNGListeners;
+
+@Listeners(TestNGListeners.class)
 public class TestNGTest {
 
-	WebDriver driver;
+	public static WebDriver driver;
 
 	@BeforeTest
 	public void setUp() {

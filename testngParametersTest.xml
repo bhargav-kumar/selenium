@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+  
+<suite name="Test Automation" verbose="1" >
+ <parameter name="username"  value="Admin"/>
+ <parameter name="password" value="admin123"></parameter>
+ <parameter name="firstname" value="John"></parameter>
+  <test name="TestNG Test" >
+    <classes>
+       <class name="testngTests.TestngParametersTest2" />
+    </classes>
+  </test>
+</suite>
