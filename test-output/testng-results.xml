@@ -1,45 +1,100 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="1" failed="1" ignored="0" total="2" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Test Automation" duration-ms="49171" started-at="2021-12-14T06:49:33Z" finished-at="2021-12-14T06:50:22Z">
+  <suite name="Default suite" duration-ms="12686" started-at="2021-12-15T00:58:45Z" finished-at="2021-12-15T00:58:58Z">
     <groups>
       <group name="Google">
-        <method signature="TestngParametersTest2.googleTest(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:testngTests.TestngParametersTest2@482f8f11]" name="googleTest" class="testngTests.TestngParametersTest2"/>
+        <method signature="TestNGTest.googleTest()[pri:1, instance:testngTests.TestNGTest@51565ec2]" name="googleTest" class="testngTests.TestNGTest"/>
       </group> <!-- Google -->
     </groups>
-    <test name="TestNG Test" duration-ms="49171" started-at="2021-12-14T06:49:33Z" finished-at="2021-12-14T06:50:22Z">
-      <class name="testngTests.TestngParametersTest2">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:testngTests.TestngParametersTest2@482f8f11]" name="setUp" is-config="true" duration-ms="9442" started-at="2021-12-14T06:49:33Z" finished-at="2021-12-14T06:49:43Z">
+    <test name="Default test" duration-ms="12686" started-at="2021-12-15T00:58:45Z" finished-at="2021-12-15T00:58:58Z">
+      <class name="testngTests.TestNGTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:testngTests.TestNGTest@51565ec2]" name="setUp" is-config="true" duration-ms="3730" started-at="2021-12-15T00:58:45Z" finished-at="2021-12-15T00:58:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="googleTest(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:testngTests.TestngParametersTest2@482f8f11]" name="googleTest" duration-ms="38887" started-at="2021-12-14T06:49:43Z" finished-at="2021-12-14T06:50:22Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Admin]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[admin123]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[John]]>
-              </value>
-            </param>
-          </params>
+        <test-method status="FAIL" signature="googleTest()[pri:1, instance:testngTests.TestNGTest@51565ec2]" name="googleTest" duration-ms="2737" started-at="2021-12-15T00:58:49Z" finished-at="2021-12-15T00:58:52Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Google1234] but found [Google]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Google1234] but found [Google]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:453)
+at org.testng.Assert.assertEquals(Assert.java:463)
+at testngTests.TestNGTest.googleTest(TestNGTest.java:29)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- googleTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:testngTests.TestngParametersTest2@482f8f11]" name="tearDown" is-config="true" duration-ms="807" started-at="2021-12-14T06:50:22Z" finished-at="2021-12-14T06:50:22Z">
+        <test-method status="SKIP" signature="googleEmailNavigation()[pri:2, instance:testngTests.TestNGTest@51565ec2]" name="googleEmailNavigation" duration-ms="0" started-at="2021-12-15T00:58:57Z" depends-on-methods="testngTests.TestNGTest.googleTest" finished-at="2021-12-15T00:58:57Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method TestNGTest.googleEmailNavigation()[pri:2, instance:testngTests.TestNGTest@51565ec2] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method TestNGTest.googleEmailNavigation()[pri:2, instance:testngTests.TestNGTest@51565ec2] depends on not successfully finished methods
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- googleEmailNavigation -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testngTests.TestNGTest@51565ec2]" name="tearDown" is-config="true" duration-ms="673" started-at="2021-12-15T00:58:57Z" finished-at="2021-12-15T00:58:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- testngTests.TestngParametersTest2 -->
-    </test> <!-- TestNG Test -->
-  </suite> <!-- Test Automation -->
+      </class> <!-- testngTests.TestNGTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

@@ -13,7 +13,9 @@ import org.testng.ITestResult;
 
 import testngTests.TestNGTest;
 
-public class TestNGListeners extends TestNGTest implements ITestListener {
+public class TestNGListeners implements ITestListener {
+
+	TestNGTest tesNgTest;
 
 	@Override
 	public void onTestStart(ITestResult result) {
@@ -28,7 +30,7 @@ public class TestNGListeners extends TestNGTest implements ITestListener {
 	@Override
 	public void onTestFailure(ITestResult result) {
 		System.out.println("On Test Failure");
-		TakesScreenshot srcshot = ((TakesScreenshot) driver);
+		TakesScreenshot srcshot = ((TakesScreenshot) TestNGTest.driver);
 		File srcFile = srcshot.getScreenshotAs(OutputType.FILE);
 		File destinationFile = new File(
 				System.getProperty("user-dir") + "/screenshots/" + System.currentTimeMillis() + ".png");
