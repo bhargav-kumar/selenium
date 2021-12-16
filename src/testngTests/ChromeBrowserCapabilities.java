@@ -21,7 +21,7 @@ public class ChromeBrowserCapabilities {
 	public void setUp() {
 		System.setProperty("webdriver.chrome.driver", "C:/Users/chbha/Downloads/chromedriver_win32/chromedriver.exe");
 		ChromeOptions options = new ChromeOptions();
-		options.addArguments("disable-infobars", "start-maximized"); //Disabled in Chrome 75 version onwards
+		options.addArguments("disable-infobars", "start-maximized", "--incognito", "headless"); //Disabled in Chrome 75 version onwards
 		
 		options.setExperimentalOption("excludeSwitches", Collections.singletonList("enable-automation"));
 		options.setExperimentalOption("useAutomationExtension", false);
@@ -44,7 +44,7 @@ public class ChromeBrowserCapabilities {
 //		driver.manage().window().maximize();
 		
 		driver.findElement(By.linkText("File Download")).click();
-		driver.findElement(By.linkText("Imagem4Test.png")).click();
+		driver.findElement(By.linkText("chromedriver.exe")).click();
 		
 	}
 	

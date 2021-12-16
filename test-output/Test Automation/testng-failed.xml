@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Test Automation]">
-  <parameter name="password" value="admin123"/>
-  <parameter name="firstname" value="John"/>
-  <parameter name="username" value="Admin"/>
-  <test thread-count="5" name="TestNG Test(failed)">
+<suite thread-count="2" guice-stage="DEVELOPMENT" verbose="5" name="Failed suite [Test Automation]" parallel="methods">
+  <parameter name="GoogleSearchInput" value="Google"/>
+  <parameter name="url" value="https://www.google.com/"/>
+  <test thread-count="2" verbose="5" name="TestNG Test(failed)" parallel="methods">
     <classes>
-      <class name="testngTests.TestngParametersTest">
+      <class name="testngTests.ParallelTests">
         <methods>
-          <include name="googleTest"/>
+          <include name="facebookTest"/>
           <include name="tearDown"/>
-          <include name="setUp"/>
+          <include name="intialization"/>
+          <include name="googleTest"/>
         </methods>
-      </class> <!-- testngTests.TestngParametersTest -->
+      </class> <!-- testngTests.ParallelTests -->
     </classes>
   </test> <!-- TestNG Test(failed) -->
 </suite> <!-- Failed suite [Test Automation] -->

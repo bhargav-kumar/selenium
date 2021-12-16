@@ -1,12 +1,12 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
   
-<suite name="Test Automation" verbose="5" >
+<suite name="Test Automation" verbose="5" parallel="classes" thread-count="2" >
  <parameter name="GoogleSearchInput"  value="Google"/>
  <parameter name="url" value="https://www.google.com/"></parameter>
   <test name="TestNG Test" >
     <classes>
-       <class name="testngTests.TestngParametersTest" />
-       <!-- <class name="testngTests.GoogleTest" /> -->
+      <!--  <class name="testngTests.TestngParametersTest" /> -->
+       <class name="testngTests.ParallelTests" />
     </classes>
   </test>
 </suite>
