@@ -6,7 +6,7 @@
   <test name="TestNG Test" >
     <classes>
       <!--  <class name="testngTests.TestngParametersTest" /> -->
-       <class name="testngTests.ParallelTests" />
+       <class name="testngTests.DataProviderTest" />
     </classes>
   </test>
 </suite>
