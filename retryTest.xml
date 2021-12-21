@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Test Automation" verbose="5">
+
+	<listeners>
+		<listener
+			class-name="testNGListeners.AnnotationTransformerListener"></listener>
+	</listeners>
+
+	<test name="TestNG Test">
+		<classes>
+			<class name="testngTests.RetryTest" />
+		</classes>
+	</test>
+</suite>

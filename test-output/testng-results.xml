@@ -1,37 +1,64 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="1" ignored="0" total="2" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="14790" started-at="2021-12-20T03:54:14Z" finished-at="2021-12-20T03:54:29Z">
+  <suite name="Default suite" duration-ms="32054" started-at="2021-12-21T01:39:18Z" finished-at="2021-12-21T01:39:50Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="14790" started-at="2021-12-20T03:54:14Z" finished-at="2021-12-20T03:54:29Z">
-      <class name="testngTests.DataProviderTest">
-        <test-method status="PASS" signature="intialization()[pri:0, instance:testngTests.DataProviderTest@29774679]" name="intialization" is-config="true" duration-ms="4001" started-at="2021-12-20T03:54:14Z" finished-at="2021-12-20T03:54:18Z">
+    <test name="Default test" duration-ms="32054" started-at="2021-12-21T01:39:18Z" finished-at="2021-12-21T01:39:50Z">
+      <class name="testngTests.AlwaysRunTest">
+        <test-method status="PASS" signature="intialization()[pri:0, instance:testngTests.AlwaysRunTest@6f195bc3]" name="intialization" is-config="true" duration-ms="4417" started-at="2021-12-21T01:39:18Z" finished-at="2021-12-21T01:39:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- intialization -->
-        <test-method status="PASS" signature="yahooTest(java.lang.String, java.lang.String)[pri:0, instance:testngTests.DataProviderTest@29774679]" name="yahooTest" duration-ms="9452" started-at="2021-12-20T03:54:20Z" data-provider="getTestDataFormExcel" finished-at="2021-12-20T03:54:29Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[abcd]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[1234.0]]>
-              </value>
-            </param>
-          </params>
+        <test-method status="FAIL" signature="yahooTest()[pri:1, instance:testngTests.AlwaysRunTest@6f195bc3]" name="yahooTest" duration-ms="4246" started-at="2021-12-21T01:39:23Z" finished-at="2021-12-21T01:39:27Z">
+          <exception class="java.lang.ArithmeticException">
+            <message>
+              <![CDATA[/ by zero]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.ArithmeticException: / by zero
+at testngTests.AlwaysRunTest.yahooTest(AlwaysRunTest.java:24)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.ArithmeticException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- yahooTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:testngTests.DataProviderTest@29774679]" name="tearDown" is-config="true" duration-ms="0" started-at="2021-12-20T03:54:29Z" finished-at="2021-12-20T03:54:29Z">
+        <test-method status="PASS" signature="facebookTest()[pri:2, instance:testngTests.AlwaysRunTest@6f195bc3]" name="facebookTest" duration-ms="22714" started-at="2021-12-21T01:39:27Z" depends-on-methods="testngTests.AlwaysRunTest.yahooTest" finished-at="2021-12-21T01:39:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- facebookTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testngTests.AlwaysRunTest@6f195bc3]" name="tearDown" is-config="true" duration-ms="657" started-at="2021-12-21T01:39:50Z" finished-at="2021-12-21T01:39:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- testngTests.DataProviderTest -->
+      </class> <!-- testngTests.AlwaysRunTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

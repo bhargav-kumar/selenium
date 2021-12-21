@@ -1,7 +1,5 @@
 package testngTests;
 
-import static org.testng.Assert.assertEquals;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -10,7 +8,6 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
-import graphql.Assert;
 import testNGListeners.TestNGISuiteListenerTest;
 
 @Listeners(TestNGISuiteListenerTest.class)
@@ -22,39 +19,37 @@ public class ParallelTests {
 	public void intialization() {
 		System.setProperty("webdriver.chrome.driver", "C:/Users/chbha/Downloads/chromedriver_win32/chromedriver.exe");
 		driver = new ChromeDriver();
+		long id = Thread.currentThread().getId();
+		System.out.println(id);
 	}
-
-//	@Test
-//	public void yahooTest() {
-//		driver.get("https://in.search.yahoo.com/?fr2=inr");
-//		driver.findElement(By.id("yschsp")).sendKeys("Selenium");
-//	}
-//	
-//	@Test
-//	public void facebookTest() {
-//		driver.get("https://www.facebook.com/");
-//		driver.findElement(By.id("email")).sendKeys("Selenium");
-//	}
 
 	@Test
-	public void googleTest() throws InterruptedException {
-		driver.get("http://the-internet.herokuapp.com/");
-		Thread.sleep(3000);
-
-		driver.findElement(By.linkText("Checkboxes")).click();
-		boolean isSel = driver.findElement(By.xpath("//input[@type='checkbox'][1]")).isSelected(); // Checkboxes, Radio
-		System.out.println("isSel : " + isSel);
-//		Assert.assertTrue(isSel);
-		assertEquals(isSel, true);
-		
-//		boolean isEnabled = driver.findElement(By.name("btnK")).isEnabled(); //Buttons, Links
-//		System.out.println("isEnabled : "+isEnabled);
-
-		// boolean isDisplayed = driver.findElement(By.name("btnK")).isDisplayed(); //Logo, Button, Link, Input, Dropdown
-//		System.out.println("isDisplayed : "+isDisplayed);
-
+	public void yahooTest() {
+		driver.get("https://in.search.yahoo.com/?fr2=inr");
+//		driver.findElement(By.id("yschsp")).sendKeys("Selenium");
+		System.out.println("yahooTest");
+		long id = Thread.currentThread().getId();
+		System.out.println(id + "--"+"yahooTest");
+	}
+	
+	@Test
+	public void facebookTest() {
+		driver.get("https://www.facebook.com/");
+		driver.findElement(By.id("email")).sendKeys("Selenium");
+		System.out.println("facebookTest");
+		long id = Thread.currentThread().getId();
+		System.out.println(id +"--"+ "facebookTest");
 	}
 
+	@Test
+	public void googleTest() {
+		driver.get("https://www.google.com/");
+		driver.findElement(By.name("q")).sendKeys("Selenium");
+		System.out.println("googleTest");
+		long id = Thread.currentThread().getId();
+		System.out.println(id +"--"+ "googleTest");
+	}
+	
 	@AfterTest
 	public void tearDown() {
 		driver.quit();

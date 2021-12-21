@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Test Automation" verbose="5" parallel="classes" thread-count="5">
+
+	<test name="TestNG Test">
+		<classes>
+			<class name="testngTests.ParallelTests" />
+			<class name="testngTests.RetryTest" />
+		</classes>
+	</test>
+	
+	<!-- <test name="TestNG Test1">
+		<classes>
+			<class name="testngTests.ParallelTests" />
+		</classes>
+	</test> -->
+</suite>
