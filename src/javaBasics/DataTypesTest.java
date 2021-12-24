@@ -34,7 +34,7 @@ public class DataTypesTest {
 		String str = "Hello";
 		System.out.println("String : " + str);
 //		Array
-		String[] stringArray = { "Hellow", "World", "1" };
+		String[] stringArray = { "Hello", "World", "1" };
 		
 		System.out.println("stringArray[0] : "+stringArray[0]);
 		System.out.println("stringArray[1] : "+stringArray[1]);
