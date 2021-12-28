@@ -3,6 +3,8 @@ package javaBasics;
 public class ConstructorTest {
 
 	
+	public static int age;
+	
 	//No-argument constructor
 	public ConstructorTest() {
 		System.out.println("ConstructorTest");
@@ -31,9 +33,14 @@ public class ConstructorTest {
 			
 		ConstructorTest ct = new ConstructorTest();
 		ct.testMethod();
+//		ConstructorTest.age;
 		
 		ConstructorTest ct1 = new ConstructorTest("Peter", "Test Engineer", 50);
 		ct1.testMethod();
+		
+		StaticKeywordTest.testMethod(100);
+		System.out.println(StaticKeywordTest.age);
+		
 		
 	}
 
