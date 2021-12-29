@@ -28,7 +28,7 @@ public class TakeScreenshot {
 		
 		TakesScreenshot srcshot = ((TakesScreenshot)driver);
 		File srcFile = srcshot.getScreenshotAs(OutputType.FILE);
-		File destinationFile = new File(System.getProperty("user-dir")+"/screenshots/"+System.currentTimeMillis()+".png");
+		File destinationFile = new File(System.getProperty("user.dir")+"/screenshots/"+System.currentTimeMillis()+".png");
 		FileUtils.copyFile(srcFile, destinationFile);
 		
 		Thread.sleep(2000);
