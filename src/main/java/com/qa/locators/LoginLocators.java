@@ -4,8 +4,8 @@ import org.openqa.selenium.By;
 
 public interface LoginLocators {
 
-	By userName = By.id("txtUsername");
+	By USERNAME_TEXTBOX = By.id("txtUsername");
 
-	By password = By.id("txtPassword");
-	By loginButton = By.id("btnLogin");
+	By PASSWORD_TEXTBOX = By.id("txtPassword");
+	By LOGIN_BUTTON = By.id("btnLogin");
 }

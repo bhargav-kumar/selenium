@@ -2,24 +2,46 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="16151" started-at="2022-01-04T01:51:21Z" finished-at="2022-01-04T01:51:37Z">
+  <suite name="Default suite" duration-ms="24108" started-at="2022-01-05T08:04:39Z" finished-at="2022-01-05T08:05:04Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="16151" started-at="2022-01-04T01:51:21Z" finished-at="2022-01-04T01:51:37Z">
-      <class name="com.qa.tests.GoogleTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.qa.tests.GoogleTest@73846619]" name="setup" is-config="true" duration-ms="7556" started-at="2022-01-04T01:51:21Z" finished-at="2022-01-04T01:51:28Z">
+    <test name="Default test" duration-ms="24108" started-at="2022-01-05T08:04:39Z" finished-at="2022-01-05T08:05:04Z">
+      <class name="com.qa.tests.Update_myinfoTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.qa.tests.Update_myinfoTest@3632be31]" name="setup" is-config="true" duration-ms="10163" started-at="2022-01-05T08:04:39Z" finished-at="2022-01-05T08:04:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="testMethod()[pri:0, instance:com.qa.tests.GoogleTest@73846619]" name="testMethod" duration-ms="7897" started-at="2022-01-04T01:51:28Z" finished-at="2022-01-04T01:51:36Z">
+        <test-method status="PASS" signature="testMethod(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qa.tests.Update_myinfoTest@3632be31]" name="testMethod" duration-ms="11906" started-at="2022-01-05T08:04:51Z" data-provider="getTestDataFormExcel" finished-at="2022-01-05T08:05:03Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[John]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Peter]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[123456.0]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Single]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testMethod -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.tests.GoogleTest@73846619]" name="tearDown" is-config="true" duration-ms="678" started-at="2022-01-04T01:51:36Z" finished-at="2022-01-04T01:51:37Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.tests.Update_myinfoTest@3632be31]" name="tearDown" is-config="true" duration-ms="697" started-at="2022-01-05T08:05:03Z" finished-at="2022-01-05T08:05:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.qa.tests.GoogleTest -->
+      </class> <!-- com.qa.tests.Update_myinfoTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
