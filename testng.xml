@@ -1,0 +1,10 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+  
+<suite name="Automation suite" verbose="1" >
+  <test name="Orange hrm tests" >
+    <classes>
+       <class name="com.qa.tests.OHRM_LoginTest" />
+       <!-- <class name="com.qa.tests.Update_myinfoTest" /> -->
+    </classes>
+  </test>
+</suite>

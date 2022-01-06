@@ -13,37 +13,35 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class TestBase {
 
-	Properties properties;
+	static Properties properties;
 
 	public TestBase() {
-//		try {
-//			properties = new Properties();
-//			File f = new File(
-//					"D:\\Projects\\Java\\new\\Selenium-Maven-Framework\\src\\main\\java\\com\\qa\\config\\config.properties");
-//			FileInputStream file = new FileInputStream(f);
-//			properties.load(file);
-//		} catch (Exception e) {
-//			e.printStackTrace();
-//		}
+		try {
+			properties = new Properties();
+			FileInputStream file = new FileInputStream("D:\\Projects\\Java\\new\\Selenium-Maven-Framework\\src\\main\\java\\com\\qa\\config\\config.properties");
+			properties.load(file);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 	}
 
 	public static WebDriver driver;
 
 	public static void intialization() {
 
-		String browser = "chrome";
+//		String browser = "chrome";
 
-//		System.out.println("System.getProperty(\"browser\") : "+ System.getProperty("browser"));
-		if (browser.equals("chrome")) {
+		System.out.println("System.getProperty(\"browser\") : "+ properties.getProperty("browser"));
+		if (properties.getProperty("browser").equals("chrome")) {
 			System.setProperty("webdriver.chrome.driver",
 					"C:/Users/chbha/Downloads/chromedriver_win32/chromedriver.exe");
 			driver = new ChromeDriver();
 
-		} else if (browser.equals("firefox")) {
+		} else if (properties.getProperty("browser").equals("firefox")) {
 			System.setProperty("webdriver.gecko.driver", "C:/Users/chbha/Downloads/chromedriver_win32/gecko.exe");
 			driver = new FirefoxDriver();
 
-		} else if (browser.equals("edge")) {
+		} else if (properties.getProperty("browser").equals("edge")) {
 			System.setProperty("webdriver.edge.driver", "C:/Users/chbha/Downloads/chromedriver_win32/edge.exe");
 			driver = new EdgeDriver();
 		}
@@ -52,7 +50,7 @@ public class TestBase {
 		driver.manage().deleteAllCookies();
 		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(30));
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
-		driver.get("https://opensource-demo.orangehrmlive.com/");
+		driver.get(properties.getProperty("url"));
 	}
 
 }
