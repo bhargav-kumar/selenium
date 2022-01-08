@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Automation suite" duration-ms="38752" started-at="2022-01-08T11:24:06 IST" finished-at="2022-01-08T11:24:45 IST">
+  <suite name="Automation suite" duration-ms="28344" started-at="2022-01-08T12:19:33 IST" finished-at="2022-01-08T12:20:01 IST">
     <groups>
     </groups>
-    <test name="Orange hrm tests" duration-ms="38752" started-at="2022-01-08T11:24:06 IST" finished-at="2022-01-08T11:24:45 IST">
+    <test name="Orange hrm tests" duration-ms="28344" started-at="2022-01-08T12:19:33 IST" finished-at="2022-01-08T12:20:01 IST">
       <class name="com.qa.tests.OHRM_LoginTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.qa.tests.OHRM_LoginTest@2833cc44]" name="setup" is-config="true" duration-ms="24699" started-at="2022-01-08T11:24:06 IST" finished-at="2022-01-08T11:24:31 IST">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.qa.tests.OHRM_LoginTest@e720b71]" name="setup" is-config="true" duration-ms="8649" started-at="2022-01-08T12:19:33 IST" finished-at="2022-01-08T12:19:41 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="testMethod()[pri:0, instance:com.qa.tests.OHRM_LoginTest@2833cc44]" name="testMethod" duration-ms="11952" started-at="2022-01-08T11:24:31 IST" finished-at="2022-01-08T11:24:43 IST">
+        <test-method status="PASS" signature="testMethod()[pri:0, instance:com.qa.tests.OHRM_LoginTest@e720b71]" name="testMethod" duration-ms="18939" started-at="2022-01-08T12:19:41 IST" finished-at="2022-01-08T12:20:00 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testMethod -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.tests.OHRM_LoginTest@2833cc44]" name="tearDown" is-config="true" duration-ms="1987" started-at="2022-01-08T11:24:43 IST" finished-at="2022-01-08T11:24:45 IST">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.tests.OHRM_LoginTest@e720b71]" name="tearDown" is-config="true" duration-ms="729" started-at="2022-01-08T12:20:00 IST" finished-at="2022-01-08T12:20:01 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
