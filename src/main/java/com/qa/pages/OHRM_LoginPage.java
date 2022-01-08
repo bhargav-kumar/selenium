@@ -29,6 +29,7 @@ public class OHRM_LoginPage extends TestBase {
 		this.enterPassword("admin123");
 		this.clickOnLoginButton();
 		
+		
 		Assert.assertEquals(this.homePageLogo(), true, "Orange HRM logo is not displayed on home page");
 		
 		driver.findElement(By.id("menu_pim_viewMyDetails")).click();

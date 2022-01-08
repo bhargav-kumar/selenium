@@ -1,0 +1,8 @@
+com\qa\locators\MyInfoLocators.class
+com\qa\listeners\TestNGListeners.class
+com\qa\pages\OHRM_MyInfoPage.class
+com\qa\locators\LoginLocators.class
+com\qa\pages\OHRM_LoginPage.class
+com\qa\util\ReadDataFromExcel.class
+com\qa\baseSetup\TestBase.class
+com\qa\helpers\DriverActions.class
